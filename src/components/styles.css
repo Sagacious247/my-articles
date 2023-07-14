@@ -1,0 +1,38 @@
+.mobile__add {
+   display: none;
+}
+.hamburger {
+   display: none;
+}
+
+@media only screen and (max-width: 576px) {
+   .article__content {
+    gap: 5px;
+   }
+   .hamburger {
+      display: block;
+   }
+   .image__info {
+    width: 100%;
+   }
+   .desktop__add {
+     display: none;
+   }
+
+   .mobile__add.active {
+      display: block;
+      position: fixed;
+   left: -100;
+   top: 0rem;
+   width: 70%;
+   height: 90vh;
+   z-index: 999;
+   text-align: center;
+   transition: .3s;
+   }
+
+.mobile__add.active{
+   left: 0;
+   background-color: bisque;
+}
+}
